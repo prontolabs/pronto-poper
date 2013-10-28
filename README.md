@@ -1,4 +1,4 @@
-# Pronto runner Poper
+# Pronto runner for Poper
 
 [![Code Climate](https://codeclimate.com/github/mmozuras/pronto-poper.png)](https://codeclimate.com/github/mmozuras/pronto-poper)
 [![Build Status](https://travis-ci.org/mmozuras/pronto-poper.png)](https://travis-ci.org/mmozuras/pronto-poper)
