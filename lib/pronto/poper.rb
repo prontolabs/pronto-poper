@@ -9,10 +9,10 @@ module Pronto
       poper_runner = ::Poper::Runner.new(commit, patches.owner.repo.path)
       errors = poper_runner.run
 
-      messages_for(patches, errors)
+      messages_for(errors)
     end
 
-    def messages_for(patches, errors)
+    def messages_for(errors)
       errors.map do |error|
         Message.new(nil, nil, :warning, error.message.capitalize, error.commit)
       end
