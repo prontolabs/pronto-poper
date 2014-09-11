@@ -6,7 +6,7 @@ module Pronto
     def run(patches, commit)
       return [] unless patches
 
-      poper_runner = ::Poper::Runner.new(commit, patches.owner.repo.path)
+      poper_runner = ::Poper::Runner.new(commit, patches.repo.path.to_s)
       errors = poper_runner.run
 
       messages_for(errors)
