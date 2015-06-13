@@ -7,15 +7,14 @@ module Pronto
       return [] unless patches
 
       poper_runner = ::Poper::Runner.new(commit, patches.repo.path.to_s)
-      errors = poper_runner.run
 
-      messages_for(errors)
+      poper_runner.run
+        .select { |error| error.commit != commit }
+        .map { |error| message_for(error) }
     end
 
-    def messages_for(errors)
-      errors.map do |error|
-        Message.new(nil, nil, :warning, error.message.capitalize, error.commit)
-      end
+    def message_for(error)
+      Message.new(nil, nil, :warning, error.message.capitalize, error.commit)
     end
   end
 end
