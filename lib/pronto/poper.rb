@@ -9,7 +9,7 @@ module Pronto
       poper_runner = ::Poper::Runner.new(@commit, repo_path.to_s)
 
       poper_runner.run
-        .select { |error| error.commit != commit }
+        .select { |error| error.commit != @commit }
         .map { |error| message_for(error) }
     end
 
