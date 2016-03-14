@@ -3,10 +3,10 @@ require 'poper'
 
 module Pronto
   class Poper < Runner
-    def run(patches, commit)
-      return [] unless patches
+    def run
+      return [] unless @patches
 
-      poper_runner = ::Poper::Runner.new(commit, patches.repo.path.to_s)
+      poper_runner = ::Poper::Runner.new(@commit, repo_path.to_s)
 
       poper_runner.run
         .select { |error| error.commit != commit }
@@ -14,7 +14,8 @@ module Pronto
     end
 
     def message_for(error)
-      Message.new(nil, nil, :warning, error.message.capitalize, error.commit)
+      Message.new(nil, nil, :warning, error.message.capitalize, error.commit,
+                  self.class)
     end
   end
 end
