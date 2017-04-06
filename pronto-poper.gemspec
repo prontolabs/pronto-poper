@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.platform = Gem::Platform::RUBY
   s.author = 'Mindaugas Mozūras'
   s.email = 'mindaugas.mozuras@gmail.com'
-  s.homepage = 'http://github.org/mmozuras/pronto-poper'
+  s.homepage = 'http://github.com/mmozuras/pronto-poper'
   s.summary = 'Pronto runner for Poper, git commit message analyzer'
 
   s.licenses = ['MIT']
