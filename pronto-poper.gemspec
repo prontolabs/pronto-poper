@@ -32,7 +32,7 @@ Gem::Specification.new do |s|
   s.extra_rdoc_files = ['LICENSE', 'README.md']
   s.require_paths = ['lib']
 
-  s.add_dependency('pronto', '~> 0.9.0')
+  s.add_dependency('pronto', '~> 0.10.0')
   s.add_dependency('poper', '~> 0.2.0')
   s.add_development_dependency('rake', '~> 12.0')
   s.add_development_dependency('rspec', '~> 3.4')
