@@ -5,4 +5,4 @@
 [![Gem Version](https://badge.fury.io/rb/pronto-poper.png)](http://badge.fury.io/rb/pronto-poper)
 [![Dependency Status](https://gemnasium.com/prontolabs/pronto-poper.png)](https://gemnasium.com/prontolabs/pronto-poper)
 
-Pronto runner for [Poper](https://github.com/prontolabs/poper), git commit message analyzer. [What is Pronto?](https://github.com/prontolabs/pronto)
+Pronto runner for [Poper](https://github.com/mmozuras/poper), git commit message analyzer. [What is Pronto?](https://github.com/prontolabs/pronto)
